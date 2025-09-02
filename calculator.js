@@ -202,7 +202,7 @@ function ClickButton13() {
 }
 
 function ClickButton14() {
-  display.value += "";
+  display.value = "";
 }
 
 function ClickButton15() {
@@ -210,7 +210,7 @@ function ClickButton15() {
 }
 
 function ClickButton16() {
-  display.value += display.value.slice(0, -1);
+  display.value = display.value.slice(0, -1);
 }
 
 function ClickButton17() {
