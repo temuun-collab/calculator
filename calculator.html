@@ -1,112 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="calculator.css" />
-</head>
-
-<body>
-  <script>
-    const container = document.createElement("div");
-    container.classList.add("container");
-
-
-    const input = document.createElement("input");
-    container.appendChild(input);
-
-
-    const container1 = document.createElement("div");
-    container1.classList.add("container1");
-    container.appendChild(container1);
-
-
-    const button = document.createElement("button");
-    button.innerText = "+";
-    button.classList.add("button");
-    container1.appendChild(button);
-
-    const button1 = document.createElement("button");
-    button1.innerText = "7";
-    button1.classList.add("button");
-    container1.appendChild(button1);
-
-    const button2 = document.createElement("button");
-    button2.innerText = "8";
-    button2.classList.add("button");
-    container1.appendChild(button2);
-
-    const button3 = document.createElement("button");
-    button3.innerText = "9";
-    button3.classList.add("button");
-    container1.appendChild(button3);
-
-    const button4 = document.createElement("button");
-    button4.innerText = "-";
-    button4.classList.add("button");
-    container1.appendChild(button4);
-
-    const button5 = document.createElement("button");
-    button5.innerText = "4";
-    button5.classList.add("button");
-    container1.appendChild(button5);
-
-    const button6 = document.createElement("button");
-    button6.innerText = "5";
-    button6.classList.add("button");
-    container1.appendChild(button6);
-
-    const button7 = document.createElement("button");
-    button7.innerText = "6";
-    button7.classList.add("button");
-    container1.appendChild(button7);
-
-    const button8 = document.createElement("button");
-    button8.innerText = "*";
-    button8.classList.add("button");
-    container1.appendChild(button8);
-
-    const button9 = document.createElement("button");
-    button9.innerText = "1";
-    button9.classList.add("button");
-    container1.appendChild(button9);
-
-    const button10 = document.createElement("button");
-    button10.innerText = "2";
-    button10.classList.add("button");
-    container1.appendChild(button10);
-
-    const button11 = document.createElement("button");
-    button11.innerText = "3";
-    button11.classList.add("button");
-    container1.appendChild(button11);
-
-    const button12 = document.createElement("button");
-    button12.innerText = "/";
-    button12.classList.add("button");
-    container1.appendChild(button12);
-
-    const button13 = document.createElement("button");
-    button13.innerText = "0";
-    button13.classList.add("button");
-    container1.appendChild(button13);
-
-    const button14 = document.createElement("button");
-    button14.innerText = ".";
-    button14.classList.add("button");
-    container1.appendChild(button14);
-
-    const button15 = document.createElement("button");
-    button15.innerText = "C";
-    button15.classList.add("button");
-    container1.appendChild(button15);
-
-
-    document.body.appendChild(container);
-    document.body.appendChild(container1);
-  </script>
-</body>
-
+  <body>
+    <script src="./calculator.js"></script>
+    <img
+      src="photo-1715153871357-38602a145547.jpeg"
+      alt="backround"
+      style="
+        width: 100vw;
+        position: absolute;
+        display: flex;
+        z-index: -1;
+        opacity: 90%;
+      "
+    />
+  </body>
 </html>
