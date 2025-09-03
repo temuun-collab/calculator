@@ -1,3 +1,8 @@
+let value1 = "";
+let value2 = "";
+let symbol = "";
+let result = "";
+
 const container = document.createElement("div");
 container.classList.add("container");
 
@@ -155,50 +160,89 @@ button19.onclick = ClickButton19;
 
 function ClickButton() {
   display.value += "1";
+  value2 += "1";
 }
 function ClickButton1() {
   display.value += "2";
+  value2 += "2";
 }
 function ClickButton2() {
   display.value += "3";
+  value2 += "3";
 }
 function ClickButton3() {
   display.value += "4";
+  value2 += "4";
 }
 function ClickButton4() {
   display.value += "5";
+  value2 += "5";
 }
 function ClickButton5() {
   display.value += "6";
+  value2 += "6";
 }
 function ClickButton6() {
   display.value += "7";
+  value2 += "7";
 }
 function ClickButton7() {
   display.value += "8";
+  value2 += "8";
 }
 function ClickButton8() {
   display.value += "9";
+  value2 += "9";
 }
 
 function ClickButton9() {
+  value1 = display.value;
   display.value += "/";
+  symbol = "/";
+  value2 = "";
 }
 
 function ClickButton10() {
+  value1 = display.value;
   display.value += "*";
+  symbol = "*";
+  value2 = "";
 }
 
 function ClickButton11() {
+  value1 = display.value;
   display.value += "-";
+  symbol = "-";
+  value2 = "";
 }
 
 function ClickButton12() {
+  value1 = display.value;
   display.value += "+";
+  symbol = "+";
+  value2 = "";
 }
 
 function ClickButton13() {
-  display.value += "=";
+  console.log(symbol);
+  if (symbol == "/") {
+    result = Number(value1) / Number(value2);
+    display.value = result;
+  }
+  if (symbol == "*") {
+    result = Number(value1) * Number(value2);
+    display.value = result;
+  }
+  if (symbol == "+") {
+    result = Number(value1) + Number(value2);
+    display.value = result;
+  }
+  if (symbol == "-") {
+    result = Number(value1) - Number(value2);
+    display.value = result;
+  }
+  // result = eval(display.value);
+  display.value = result;
 }
 
 function ClickButton14() {
@@ -206,7 +250,7 @@ function ClickButton14() {
 }
 
 function ClickButton15() {
-  display.value += "%";
+  display.value += "";
 }
 
 function ClickButton16() {
@@ -224,4 +268,6 @@ function ClickButton18() {
 function ClickButton19() {
   display.value += "-";
 }
+let answer = "";
+
 document.body.appendChild(container);
